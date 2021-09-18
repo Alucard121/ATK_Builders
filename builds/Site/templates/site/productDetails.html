@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <title>Product Details | ATK BUILD MART</title>
+    <meta name="title" content="ATK BUILD MART | Tiles, Bath fittings & Sanitary Ware Shop.">
+    <meta name="description" content="ATK BUILD MART, Top Sanitary Ware shops in Kerala, dealing with Sanitary Ware, Bathroom Fittings, Tiles In Kerala & much more.">
+    <meta name="keywords" content="sanitaryware showroom, Sanitary ware shops, sanitary ware shops near me, bathroom fittings, Tiles in Kerala, Tiles shop in Kerala, Sanitary ware showroom in Kerala, Bath Fittings, Tiles, Sanitary Ware, Bath Fittings, Shower Panels, Jacuzzi, Spa Art Basin, Cabinet & Led Mirrors"/>
+
+    <!-- Fav Icon -->
+   <link rel="icon" href="/static/frontend/images/favicon.ico" type="image/x-icon">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap" rel="stylesheet">
+
+<!-- Stylesheets -->
+<link href="/static/frontend/css/font-awesome-all.css" rel="stylesheet">
+<link href="/static/frontend/css/flaticon.css" rel="stylesheet">
+<link href="/static/frontend/css/owl.css" rel="stylesheet">
+<link href="/static/frontend/css/bootstrap.css" rel="stylesheet">
+<link href="/static/frontend/css/jquery.fancybox.min.css" rel="stylesheet">
+<link href="/static/frontend/css/animate.css" rel="stylesheet">
+<link href="/static/frontend/css/jquery-ui.css" rel="stylesheet">
+<link href="/static/frontend/css/nice-select.css" rel="stylesheet">
+<link href="/static/frontend/css/jquery.bootstrap-touchspin.css" rel="stylesheet">
+<link href="/static/frontend/css/color.css" rel="stylesheet">
+<link href="/static/frontend/css/style.css" rel="stylesheet">
+<link href="/static/frontend/css/responsive.css" rel="stylesheet">
+ <script src="https://kit.fontawesome.com/27ff7a5126.js" crossorigin="anonymous"></script>
+
+    <link href="/static/frontend/css/font-awesome-all.css" rel="stylesheet">
+
+</head>
+
+<style>
+    .pro img{width:370px;height:270px;}
+    .details .img1 img{width:170px;height:180px;}
+    .details .img2 img{width:170px;height:180px;}
+    .details .img3 img{width:170px;height:180px;}
+    .img4 img{min-width: 100%;
+  height: 584px;}
+</style>
+<!-- page wrapper -->
+
+<body>
+
+    <div class="boxed_wrapper">
+
+
+        <!-- preloader -->
+        <div class="preloader"></div>
+        <!-- preloader -->
+
+
+        
+<!-- sidebar cart item -->
+        <div class="xs-sidebar-group info-group info-sidebar">
+            <div class="xs-overlay xs-bg-black"></div>
+            <div class="xs-sidebar-widget">
+                <div class="sidebar-widget-container">
+                    <div class="widget-heading">
+                        <a href="#" class="close-side-widget">X</a>
+                    </div>
+                    <div class="sidebar-textwidget">
+                        <div class="sidebar-info-contents">
+                            <div class="content-inner">
+                                <div class="logo">
+                                    <a href="{% url 'index' %}"><img src="/static/frontend/images/logo-2.png" alt="" /></a>
+                                </div>
+                                <div class="content-box">
+                                    <h4>About Us</h4>
+                                    <p>ATK Buildmart is a fashion leader in the retail of sanitary ware, taps, bathtubs,
+                                        toilets, bidets, basins, bathroom accessories, tiles and other related products
+                                        in Kerala.</p>
+                                </div>
+                                <div class="form-inner">
+                                    <h4>Get In Touch</h4>
+                                    <form onsubmit="sendWhatsapp()" method="post">
+                                        {% csrf_token %}
+                                        <div class="form-group">
+                                            <input type="text" name="name" id="txtName" placeholder="Name" required="">
+                                        </div>
+                                        <!-- <div class="form-group">
+                                            <input type="email" name="email" id="txtEmail" placeholder="Email" required="">
+                                        </div> -->
+                                        <div class="form-group">
+                                            <textarea name="message" id="txtMsg" placeholder="Message..."></textarea>
+                                        </div>
+                                        <div class="form-group message-btn">
+                                            <button type="submit" class="theme-btn-one">Submit Now</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END sidebar widget item -->
+        <!-- whatsapp  -->
+        <script>    
+            function sendWhatsapp(){
+                var name = document.getElementById('txtName').value;
+                // var email = document.getElementById('txtEmail').value;
+                var msg = document.getElementById('txtMsg').value;
+                var message = encodeURIComponent(name) + "%0a" +  encodeURIComponent(msg);
+                var whatsapp_url = "whatsapp://send/?phone=+919446465966&text=*Hello*,%0a" + message;
+                window.location.href = whatsapp_url;
+            }
+        </script>
+        <!-- whatsapp  -->
+
+
+        <!-- main header -->
+        <header class="main-header style-two">
+            <div class="header-top centred">
+                <div class="top-inner">
+                    <p>Welcome to ATK BUILDMART. We offer the best quality tiles and sanitarywares at your affordable price<a
+                            href="tel:9446465966"><i class="fas fa-phone-alt"></i> +91 94464 65966</a></p>
+                </div>
+            </div>
+            <!-- header-lower -->
+            <div class="header-lower">
+                <div class="outer-box">
+                    <div class="logo-box">
+                        <figure class="logo"><a href="{% url 'index' %}"><img src="/static/frontend/images/logo-3.png" alt=""></a>
+                        </figure>
+                    </div>
+                    <div class="menu-area">
+                        <!--Mobile Navigation Toggler-->
+                        <div class="mobile-nav-toggler">
+                            <i class="icon-bar"></i>
+                            <i class="icon-bar"></i>
+                            <i class="icon-bar"></i>
+                        </div>
+                        <nav class="main-menu navbar-expand-md navbar-light">
+                            <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                                <ul class="navigation clearfix">
+                                    <li><a href="{% url 'index' %}">Home</a></li>
+                                    <li class="dropdown current"><a href="{% url 'product' %}">Products</a>
+                                        <div class="megamenu">
+                                            <div class="row clearfix">
+                                                <div class="col-lg-6 column">
+                                                     <ul>
+                                                        <li><a href="{% url 'tile' %}">Tiles</a></li>
+                                                        <li><a href="{% url 'sanitaryware' %}">Sanitary Ware</a></li>
+                                                        <li><a href="{% url 'bathroomfitting' %}">Bath Fittings</a></li>
+                                                        <li><a href="{% url 'showerpanel' %}">Shower Panels</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-6 column">
+                                                    <ul>
+                                                        <li><a href="{% url 'jacuzzi' %}">jacuzzi</a></li>
+                                                        <li><a href="{% url 'spaartbasin' %}">Spa Art Basin</a></li>
+                                                        <li><a href="{% url 'cabinetledmirrors' %}">Cabinet & Led Mirrors</a></li>
+                                                    </ul>
+                                                </div>                                     
+                                            </div>                                        
+                                        </div>
+                                    </li>
+                                    <li><a href="{% url 'about' %}">About Us</a></li>
+                                    <li><a href="{% url 'gallery' %}">Gallery</a></li>
+                                    <li><a href="{% url 'catalogue' %}">Showroom</a></li>
+                                    <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="nav-right-content">
+                        <div class="btn-box nav-toggler clearfix"><a href="https://wa.me/+919446465966" target="_blank">9446465966<i class="fa fa-whatsapp"></i></a></div>
+                    </div>
+                
+                    <div class="nav-right-content">
+                        <div class="btn-box nav-toggler clearfix"><a href="https://wa.me/+918606999506" target="_blank">8606999506<i class="fa fa-whatsapp"></i></a></div>
+                    </div>
+                </div>
+            </div>
+
+            <!--sticky Header-->
+            <div class="sticky-header">
+                <div class="outer-box">
+                    <div class="logo-box">
+                        <figure class="logo"><a href="{% url 'index' %}"><img src="/static/frontend/images/logo.png" alt=""></a></figure>
+                    </div>
+                    <div class="menu-area">
+                        <nav class="main-menu clearfix">
+                            <!--Keep This Empty / Menu will come through Javascript-->
+                        </nav>
+                    </div>
+                    
+                </div>
+            </div>
+        </header>
+        <!-- main-header end -->
+
+
+        <!-- Mobile Menu  -->
+        <div class="mobile-menu">
+            <div class="menu-backdrop"></div>
+            <div class="close-btn"><i class="fas fa-times"></i></div>
+
+            <nav class="menu-box">
+                <div class="nav-logo"><a href="{% url 'index' %}"><img src="/static/frontend/images/logo-2.png" alt="" title=""></a>
+                </div>
+                <div class="menu-outer">
+                    <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                </div>
+                <div class="contact-info">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><a href="https://goo.gl/maps/qeX57YVpjaVVSVN39">ATK BUILDMART<br>
+                            NEAR KODANGAD JUMA MASJID,
+                            KODANGAD,KONDOTTY
+                            MALAPPURAM - PIN-673638</a></li>
+                        <li><a href="tel:9446465966">94464 65966</a></li>
+                        <li><a href="mailto:atkbuildmart@gmail.com">atkbuildmart@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <ul class="clearfix">
+                        <li><a><span class="fab fa-twitter"></span></a></li>
+                        <li><a href="https://www.facebook.com/ATK-Buildmart-103319114729292/"><span class="fab fa-facebook-square"></span></a></li>
+                        <!-- <li><a href="{% url 'index' %}"><span class="fab fa-pinterest-p"></span></a></li> -->
+                        <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                        <li><a><span class="fab fa-youtube"></span></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div><!-- End Mobile Menu -->
+
+
+       <!-- Page Title -->
+        <section class="page-title centred" style="background-image: url(/static/frontend/images/background/page-title.jpg);">
+            <div class="auto-container">
+                <div class="content-box">
+                    <div class="title">
+                        <h1>Product Details</h1>
+                    </div>
+                    <ul class="bread-crumb clearfix">
+                        <li><a href="{% url 'index' %}">Home</a></li>
+                        <li>Product Details</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- End Page Title -->
+
+
+        <!-- shop-details -->
+        <section class="shop-details">
+            <div class="auto-container">
+                <div class="product-details-content">
+                    <div class="row align-items-center clearfix">
+                        <div class="col-lg-7 col-md-12 col-sm-12 image-column">
+                            <div class="slider-inner">
+                                <div class="bxslider">
+                                    <div class="slider-content">
+                                        <div class="slider-pager">
+                                            <ul class="thumb-box details">
+                                                <li class="img1">
+                                                    <a><figure><img src="{{x.product_image1.url}}" alt=""></figure></a>
+                                                </li>
+                                                <li class="img2">
+                                                    <a><figure><img src="{{x.product_image2.url}}" alt=""></figure></a>
+                                                </li>
+                                                <li class="img3">
+                                                    <a><figure><img src="{{x.product_image3.url}}" alt=""></figure></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-image" >
+                                            <figure class="image img4">
+                                                <a href="{{x.product_image_main.url}}" class="lightbox-image" data-fancybox="gallery"><img src="{{x.product_image_main.url}}" alt=""></a>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="slider-content">
+                                        <div class="slider-pager">
+                                            <ul class="thumb-box">
+                                                <li>
+                                                    <a class="active" data-slide-index="0" href="#"><figure><img src="/static/frontend/images/resource/shop/single-thumb-1.jpg" alt=""></figure></a>
+                                                </li>
+                                                <li>
+                                                    <a data-slide-index="1" href="#"><figure><img src="/static/frontend/images/resource/shop/single-thumb-2.jpg" alt=""></figure></a>
+                                                </li>
+                                                <li>
+                                                    <a data-slide-index="2" href="#"><figure><img src="/static/frontend/images/resource/shop/single-thumb-3.jpg" alt=""></figure></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-image">
+                                            <figure class="image"><a href="/static/frontend/images/resource/shop/shop-single-2.jpg" class="lightbox-image" data-fancybox="gallery"><img src="/static/frontend/images/resource/shop/shop-single-2.jpg" alt=""></a></figure>
+                                        </div>
+                                    </div> -->
+                                    <!-- <div class="slider-content">
+                                        <div class="slider-pager">
+                                            <ul class="thumb-box">
+                                                <li>
+                                                    <a class="active" data-slide-index="0" href="#"><figure><img src="/static/frontend/images/resource/shop/single-thumb-1.jpg" alt=""></figure></a>
+                                                </li>
+                                                <li>
+                                                    <a data-slide-index="1" href="#"><figure><img src="/static/frontend/images/resource/shop/single-thumb-2.jpg" alt=""></figure></a>
+                                                </li>
+                                                <li>
+                                                    <a data-slide-index="2" href="#"><figure><img src="/static/frontend/images/resource/shop/single-thumb-3.jpg" alt=""></figure></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-image">
+                                            <figure class="image"><a href="/static/frontend/images/resource/shop/shop-single-3.jpg" class="lightbox-image" data-fancybox="gallery"><img src="/static/frontend/images/resource/shop/shop-single-3.jpg" alt=""></a></figure>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-12 col-sm-12 content-column">
+                            <div class="product-details">
+                                <h2 style="text-transform: capitalize;">{{x.product_name}}</h2>
+                                <ul class="rating clearfix">
+                                    <!-- <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li> -->
+                                    <li style="text-transform: capitalize;">{{x.brand.brand_name}}</i></li>
+                                </ul>
+                                <!-- <h5>$89.00</h5> -->
+                                <div class="text">
+                                    <p style="text-transform: capitalize;">{{x.product_details}}</p>
+                                </div>
+                                <!-- <div class="color-box">
+                                    <h3>Color</h3>
+                                    <div class="color-list clearfix">
+                                        <span class="color color-1"></span>
+                                        <span class="color color-2"></span>
+                                        <span class="color color-3"></span>
+                                        <span class="color color-4"></span>
+                                    </div>
+                                </div> -->
+                                {% if messages %}
+                                            <div class="form-group color03 ">
+                                                <!-- <ul class="messages align-content"> -->
+                                                    {% for message in messages %}
+                                                    <div {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</div>
+                                                    {% endfor %}
+                                                    <!-- </ul> -->
+                                                </div>
+                                                {% endif %}
+                                <div class="addto-cart-box"> 
+                                    <ul class="clearfix">
+                                        <!-- <li class="item-quantity"><input class="quantity-spinner" type="text" value="1" name="quantity"></li> -->
+                                        <li><button type="button" class="theme-btn-one" data-toggle="modal" data-target="#exampleModalCenter">GET A PRICE </button></li>
+                                    </ul>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                      <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Get a price</h5>
+                                                
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                            </button>
+                                          </div>
+                                          <div class="modal-body">
+                                           <form action="{% url 'getPrice' %}?id={{x.id}}" method="post">
+                                            {% csrf_token %}                                            
+                                            <p style="float: right;">* Please fill in all the fields</p>         
+                                              <div class="form-group">
+                                                <label for="recipient-name" class="col-form-label">Name:</label>
+                                                <input type="text" name="name" class="form-control" id="recipient-name" required>
+                                              </div>
+                                              <div class="form-group">
+                                                <label for="recipient-city" class="col-form-label">City:</label>
+                                                <input type="text" name="city" class="form-control" id="recipient-city" required>
+                                              </div>
+                                              <div class="form-group">
+                                                <label for="recipient-phone" class="col-form-label">Mobile:</label>
+                                                <input type="tel" name="mobile" class="form-control" id="recipient-phone" required>
+                                              </div>
+                                              <div class="form-group">
+                                                <label for="message-text" class="col-form-label">Description ( Optional ):</label>
+                                                <textarea name="description" class="form-control" id="message-text"></textarea>
+                                              </div>
+                                          </div>
+                                          <!-- <input type="text" name="product_id" value="{{p.id}}" hidden> -->
+                                          <div class="modal-footer">                                            
+                                            <div class="form-group message-btn">
+                                            <button type="submit" class="theme-btn-one">Submit Query</button>
+                                            </div>
+                                            </form>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!-- Modal End-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-discription">
+                    <div class="tabs-box">
+                        <div class="tab-btn-box">
+                            <ul class="tab-btns tab-buttons clearfix">
+                                <li class="tab-btn active-btn" data-tab="#tab-1">Description</li>
+                                <!-- <li class="tab-btn" data-tab="#tab-2">Additional information</li> -->
+                                <!-- <li class="tab-btn" data-tab="#tab-3">Reviews (2)</li> -->
+                            </ul>
+                        </div>
+                        <div class="tabs-content">
+                            <div class="tab active-tab" id="tab-1">
+                                <div class="content-box">
+                                    <p style="text-transform: capitalize;">{{x.product_description}}.</p>
+                                </div>
+                            </div>
+                           <!--  <div class="tab" id="tab-2">
+                                <div class="content-box">
+                                    <p>Sorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur xcepteur sint occaecat cupidatat non proident, sunt.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cdolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudinInteger in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor.</p>
+                                </div>
+                            </div> -->
+                            <!-- <div class="tab" id="tab-3">
+                                <div class="row clearfix">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 review-block">
+                                        <div class="customer-review">
+                                            <h3>Reviews</h3>
+                                            <div class="single-review">
+                                                <figure class="image-box"><img src="/static/frontend/images/resource/review-1.png" alt=""></figure>
+                                                <div class="inner">
+                                                    <ul class="rating">
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                    </ul>
+                                                    <h5>Eileen Alene<span> - May 2, 2020</span></h5>
+                                                    <p>Excepteur sint occaecat cupidatat non proident sunt in culpa  qui officia deserunt mollit anim  est laborum. Sed perspiciatis unde omnis natus.</p>
+                                                </div>
+                                            </div>
+                                            <div class="single-review">
+                                                <figure class="image-box"><img src="/static/frontend/images/resource/review-2.png" alt=""></figure>
+                                                <div class="inner">
+                                                    <ul class="rating">
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                    </ul>
+                                                    <h5>Jhon Matter<span> - May 1, 2020</span></h5>
+                                                    <p>Excepteur sint occaecat cupidatat non proident sunt in culpa  qui officia deserunt mollit anim  est laborum. Sed perspiciatis unde omnis natus.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 comment-column">
+                                        <div class="customer-comments">
+                                            <h3>Be First To Rate It</h3>
+                                            <div class="rating-box clearfix">
+                                                <p>Your Rating</p>
+                                                <ul class="rating clearfix">
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <form action="http://azim.commonsupport.com/Zixxo/single-shop-1.html" method="post" class="comment-form">
+                                                <div class="row clearfix">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                                        <textarea name="message" placeholder="Your Review"></textarea>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-12 col-sm-12 form-group">
+                                                        <input type="text" name="name" placeholder="Your Name" required="">
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-12 col-sm-12 form-group">
+                                                        <input type="email" name="email" placeholder="Your Email" required="">
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-12 col-sm-12 form-group message-btn">
+                                                        <button type="submit" class="theme-btn-one">Submit Now</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- shop-details end -->
+
+
+        <!-- product-section -->
+        <section class="product-section">
+            <div class="auto-container">
+                <div class="sec-title centred">
+                    <p>Our Latest Product</p>
+                    <h2>Explore Our Tiles Toilet & <br />Stone Shop</h2>
+                </div>
+                <div class="row clearfix">
+                    {% for r in recent %}
+                    <div class="col-lg-4 col-md-6 col-sm-12 product-block">
+                        <div class="product-block-one wow fadeInUp animated animated" data-wow-delay="300ms"
+                            data-wow-duration="1500ms">
+                            <div class="inner-box">
+                                <figure class="image-box pro">
+                                    <img src="{{r.product_image.url}}" alt="" width="10px" height="270px">
+                                    <a href="{% url 'productDetails' id=r.id %}"><i class="fas fa-link"></i></a>
+                                </figure>
+                                <div class="lower-content prd-category">
+
+                                    <div class="text"> <!-- ?id={{x.id}} -->
+                                        <h3 style="text-transform: capitalize;"><a href="{% url 'productDetails' id=r.id %}">{{r.product_name}}</a></h3>
+                                                  </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% empty %}
+                    <div class="centred"><h5 >No Latest Products</h5></div>
+                    {% endfor %}
+<!--                    <div class="col-lg-4 col-md-6 col-sm-12 product-block">-->
+<!--                        <div class="product-block-one wow fadeInUp animated animated" data-wow-delay="300ms" data-wow-duration="1500ms">-->
+<!--                            <div class="inner-box">-->
+<!--                                <figure class="image-box">-->
+<!--                                    <img src="/static/frontend/images/resource/shop/shop-2.jpg" alt="">-->
+<!--                                    <a href=""><i class="fas fa-link"></i></a>-->
+<!--                                </figure>-->
+<!--                                <div class="lower-content">-->
+<!--                                    <ul class="rating clearfix">-->
+<!--                                        <li><i class="fas fa-star"></i></li>-->
+<!--                                        <li><i class="fas fa-star"></i></li>-->
+<!--                                        <li><i class="fas fa-star"></i></li>-->
+<!--                                        <li><i class="fas fa-star"></i></li>-->
+<!--                                        <li><i class="fas fa-star"></i></li>-->
+<!--                                    </ul>-->
+<!--                                    <div class="text">-->
+<!--                                        <h3><a href="">White Modern Toilet</a></h3>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash; <div class="price">-->
+<!--                                        <h3><span>$</span>33.99</h3>-->
+<!--                                    </div> &ndash;&gt;-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                    <div class="col-lg-4 col-md-6 col-sm-12 product-block">-->
+<!--                        <div class="product-block-one wow fadeInUp animated animated" data-wow-delay="600ms" data-wow-duration="1500ms">-->
+<!--                            <div class="inner-box">-->
+<!--                                <figure class="image-box">-->
+<!--                                    <img src="/static/frontend/images/resource/shop/shop-3.jpg" alt="">-->
+<!--                                    <a href=""><i class="fas fa-link"></i></a>-->
+<!--                                </figure>-->
+<!--                                <div class="lower-content">-->
+<!--                                    <ul class="rating clearfix">-->
+<!--                                        <li><i class="fas fa-star"></i></li>-->
+<!--                                        <li><i class="fas fa-star"></i></li>-->
+<!--                                        <li><i class="fas fa-star"></i></li>-->
+<!--                                        <li><i class="fas fa-star"></i></li>-->
+<!--                                        <li><i class="fas fa-star"></i></li>-->
+<!--                                    </ul>-->
+<!--                                    <div class="text">-->
+<!--                                        <h3><a href="">Roca Bathrooms</a></h3>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash; <div class="price">-->
+<!--                                        <h3><span>$</span>29.99</h3>-->
+<!--                                    </div> &ndash;&gt;-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-lg-4 col-md-6 col-sm-12 product-block">-->
+<!--                        <div class="product-block-one wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms">-->
+<!--                            <div class="inner-box">-->
+<!--                                <figure class="image-box">-->
+<!--                                    <img src="/static/frontend/images/resource/shop/shop-4.jpg" alt="">-->
+<!--                                    <a href=""><i class="fas fa-link"></i></a>-->
+<!--                                </figure>-->
+<!--                                <div class="lower-content">-->
+<!--                                    <ul class="rating clearfix">-->
+<!--                                        <li><i class="fas fa-star"></i></li>-->
+<!--                                        <li><i class="fas fa-star"></i></li>-->
+<!--                                        <li><i class="fas fa-star"></i></li>-->
+<!--                                        <li><i class="fas fa-star"></i></li>-->
+<!--                                        <li><i class="fas fa-star"></i></li>-->
+<!--                                    </ul>-->
+<!--                                    <div class="text">-->
+<!--                                        <h3><a href="">Modern Room Toilet</a></h3>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash; <div class="price">-->
+<!--                                        <h3><span>$</span>25.99</h3>-->
+<!--                                    </div> &ndash;&gt;-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-lg-4 col-md-6 col-sm-12 product-block">-->
+<!--                        <div class="product-block-one wow fadeInUp animated animated" data-wow-delay="300ms" data-wow-duration="1500ms">-->
+<!--                            <div class="inner-box">-->
+<!--                                <figure class="image-box">-->
+<!--                                    <img src="/static/frontend/images/resource/shop/shop-5.jpg" alt="">-->
+<!--                                    <a href=""><i class="fas fa-link"></i></a>-->
+<!--                                </figure>-->
+<!--                                <div class="lower-content">-->
+<!--                                    <ul class="rating clearfix">-->
+<!--                                        <li><i class="fas fa-star"></i></li>-->
+<!--                                        <li><i class="fas fa-star"></i></li>-->
+<!--                                        <li><i class="fas fa-star"></i></li>-->
+<!--                                        <li><i class="fas fa-star"></i></li>-->
+<!--                                        <li><i class="fas fa-star"></i></li>-->
+<!--                                    </ul>-->
+<!--                                    <div class="text">-->
+<!--                                        <h3><a href="">Gray Wall Tiles</a></h3>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash; <div class="price">-->
+<!--                                        <h3><span>$</span>33.99</h3>-->
+<!--                                    </div> &ndash;&gt;-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-lg-4 col-md-6 col-sm-12 product-block">-->
+<!--                        <div class="product-block-one wow fadeInUp animated animated" data-wow-delay="600ms" data-wow-duration="1500ms">-->
+<!--                            <div class="inner-box">-->
+<!--                                <figure class="image-box">-->
+<!--                                    <img src="/static/frontend/images/resource/shop/shop-6.jpg" alt="">-->
+<!--                                    <a href=""><i class="fas fa-link"></i></a>-->
+<!--                                </figure>-->
+<!--                                <div class="lower-content">-->
+<!--                                    <ul class="rating clearfix">-->
+<!--                                        <li><i class="fas fa-star"></i></li>-->
+<!--                                        <li><i class="fas fa-star"></i></li>-->
+<!--                                        <li><i class="fas fa-star"></i></li>-->
+<!--                                        <li><i class="fas fa-star"></i></li>-->
+<!--                                        <li><i class="fas fa-star"></i></li>-->
+<!--                                    </ul>-->
+<!--                                    <div class="text">-->
+<!--                                        <h3><a href="">Colorful Stone</a></h3>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash; <div class="price">-->
+<!--                                        <h3><span>$</span>29.99</h3>-->
+<!--                                    </div> &ndash;&gt;-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+                </div>
+            </div>
+        </section>
+        <!-- product-section end -->
+
+
+        <!-- clients-section -->
+       <section class="clients-section bg-color-2">
+            <div class="auto-container">
+                <div class="clients-carousel owl-carousel owl-theme owl-nav-none owl-dots-none">
+                    <figure class="clients-logo-box"><a href="#"><img
+                                src="/static/frontend/images/clients/clients-logo-6.png" alt=""></a></figure>
+                    <figure class="clients-logo-box"><a href="#"><img
+                                src="/static/frontend/images/clients/clients-logo-7.png" alt=""></a></figure>
+                    <figure class="clients-logo-box"><a href="#"><img
+                                src="/static/frontend/images/clients/clients-logo-8.png" alt=""></a></figure>
+                    <figure class="clients-logo-box"><a href="#"><img
+                                src="/static/frontend/images/clients/clients-logo-15.png" alt=""></a></figure>
+                    <figure class="clients-logo-box"><a href="#"><img
+                                src="/static/frontend/images/clients/clients-logo-9.png" alt=""></a></figure>
+                    <figure class="clients-logo-box"><a href="#"><img
+                                src="/static/frontend/images/clients/clients-logo-10.png" alt=""></a></figure>
+                    <figure class="clients-logo-box"><a href="#"><img
+                                src="/static/frontend/images/clients/clients-logo-11.png" alt=""></a></figure>
+                    <figure class="clients-logo-box"><a href="#"><img
+                                src="/static/frontend/images/clients/clients-logo-12.png" alt=""></a></figure>
+                    <figure class="clients-logo-box"><a href="#"><img
+                                src="/static/frontend/images/clients/clients-logo-13.png" alt=""></a></figure>
+                    <figure class="clients-logo-box"><a href="#"><img
+                                src="/static/frontend/images/clients/clients-logo-14.png" alt=""></a></figure>
+                </div>
+            </div>
+        </section>
+        <!-- clients-section end -->
+
+
+       
+<!-- main-footer -->
+        <footer class="main-footer">
+            <div class="auto-container">
+                <div class="logo-box centred">
+                    <figure class="footer-logo"><a href="{% url 'index' %}"><img src="/static/frontend/images/footer-logo.png"
+                                alt=""></a></figure>
+                </div>
+                <div class="widget-section">
+                    <div class="row clearfix">
+                        <div class="col-lg-6 col-md-12 col-sm-12 footer-column">
+                            <div class="footer-widget about-widget">
+                                <div class="widget-title">
+                                    <h3>About Us</h3>
+                                </div>
+                                <div class="text">
+                                    <p>ATK Buildmart is a fashion leader in the retail of sanitary ware, taps, bathtubs,
+                                        toilets, bidets, basins, bathroom accessories, tiles and other related products
+                                        in Kerala.</p>
+                                </div>
+
+                                <p class="email-footer">Enter Your Email For Our Latest Newsletter</p>
+                                <form action="{% url 'newsLetter' %}" method="post" class="subscribe-form">
+                                    {% csrf_token %}
+                                    {% if messages %}
+                            <div class="form-group color03 ">
+                                <!-- <ul class="messages align-content"> -->
+                                    {% for message in messages %}
+                                        <div {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</div>
+                                    {% endfor %}
+                                <!-- </ul> -->
+                            </div>
+                        {% endif %}
+                                    <div class="form-group">
+                                        <input type="email" name="email" placeholder="Enter Your Email" required="">
+                                        <button type="submit"><i class="far fa-arrow-right"></i></button>
+                                    </div>
+                                </form>
+                                <ul class="social-links clearfix">
+                                    <li><a href="https://www.facebook.com/ATK-Buildmart-103319114729292/"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+                                    <li><a><i class="fab fa-twitter"></i>Twitter</a></li>
+                                    <li><a><i class="fab fa-youtube"></i>Youtube</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 footer-column">
+                            <div class="row clearfix">
+                                <div class="col-lg-6 col-md-6 col-sm-12 column">
+                                    <div class="footer-widget links-widget ml-70">
+                                        <div class="widget-title">
+                                            <h3>Quick Links</h3>
+                                        </div>
+                                        <div class="widget-content">
+                                            <ul class="links-list clearfix">
+                                                <li><a href="{% url 'index' %}">Home</a></li>
+                                                <li><a href="{% url 'product' %}">Product</a></li>
+                                                <li><a href="{% url 'about' %}">About Us</a></li>
+                                                <li><a href="{% url 'gallery' %}">Gallery</a></li>
+                                                <li><a href="{% url 'catalogue' %}">Showroom</a></li>
+                                                <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 column">
+                                    <div class="footer-widget contact-widget ml-40">
+                                        <div class="widget-title">
+                                            <h3>Contact Us</h3>
+                                        </div>
+                                        <div class="text">
+                                            <p>Get In Touch with Our <br>Customer Care</p>
+                                        </div>
+                                        <ul class="info-list clearfix">
+                                             <li><i class="fas fa-phone-alt"></i><a href="tel:9446465966">+91 94464 65966</a></li>
+                                            <li><i class="far fa-envelope-open"></i><a
+                                                    href="mailto:atkbuildmart@gmail.com">atkbuildmart@gmail.com</a></li>
+                                            <li><i class="far fa-map-marker-alt"></i><a href="https://goo.gl/maps/qeX57YVpjaVVSVN39">ATK BUILDMART
+                                                NEAR KODANGAD JUMA MASJID
+                                                KODANGAD
+                                                KONDOTTY
+                                                MALAPPURAM <br>
+                                                PIN-673638</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom centred">
+                    <p>&copy; 2021 ATK Build Mart | All Rights Reserved | Designed By <a
+                            onMouseOver="this.style.color='#71c21b'" onMouseOut="this.style.color='white'"
+                            style="color: white;" href="http://www.admoredigital.com/">Admore Digital</a></p>
+                </div>
+            </div>
+        </footer>
+        <!-- main-footer end -->
+
+        <!--Scroll to top-->
+        <button class="scroll-top scroll-to-target" data-target="html">
+            <span class="fa fa-arrow-up"></span>
+        </button>
+    </div>
+
+
+    <!-- jequery plugins -->
+    <script src="/static/frontend/js/jquery.js"></script>
+    <script src="/static/frontend/js/popper.min.js"></script>
+    <script src="/static/frontend/js/bootstrap.min.js"></script>
+    <script src="/static/frontend/js/owl.js"></script>
+    <script src="/static/frontend/js/wow.js"></script>
+    <script src="/static/frontend/js/validation.js"></script>
+    <script src="/static/frontend/js/jquery.fancybox.js"></script>
+    <script src="/static/frontend/js/appear.js"></script>
+    <script src="/static/frontend/js/scrollbar.js"></script>
+    <script src="/static/frontend/js/nav-tool.js"></script>
+    <script src="/static/frontend/js/jquery-ui.js"></script>
+    <script src="/static/frontend/js/jquery.nice-select.min.js"></script>
+    <script src="/static/frontend/js/bxslider.js"></script>
+    <script src="/static/frontend/js/jquery.bootstrap-touchspin.js"></script>
+
+    <!-- main-js -->
+    <script src="/static/frontend/js/script.js"></script>
+
+</body><!-- End of .page_wrapper -->
+
+<style>
+    
+    .fa-whatsapp:before {
+        color: #25D366 !important;
+    }
+    .fa-whatsapp::before:hover {
+        color: white !important;
+    }
+</style>
+
+
+</html>

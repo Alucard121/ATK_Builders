@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <title>About | ATK BUILD MART</title>
+
+    <meta name="title" content="ATK BUILD MART | Tiles, Bath fittings & Sanitary Ware Shop.">
+    <meta name="description" content="ATK BUILD MART, Top Sanitary Ware shops in Kerala, dealing with Sanitary Ware, Bathroom Fittings, Tiles In Kerala & much more.">
+    <meta name="keywords" content="sanitaryware showroom, Sanitary ware shops, sanitary ware shops near me, bathroom fittings, Tiles in Kerala, Tiles shop in Kerala, Sanitary ware showroom in Kerala, Bath Fittings, Tiles, Sanitary Ware, Bath Fittings, Shower Panels, Jacuzzi, Spa Art Basin, Cabinet & Led Mirrors"/>
+    <!-- Fav Icon -->
+    <link rel="icon" href="/static/frontend/images/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link href="/static/frontend/css/font-awesome-all.css" rel="stylesheet">
+    <link href="/static/frontend/css/flaticon.css" rel="stylesheet">
+    <link href="/static/frontend/css/owl.css" rel="stylesheet">
+    <link href="/static/frontend/css/bootstrap.css" rel="stylesheet">
+    <link href="/static/frontend/css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="/static/frontend/css/animate.css" rel="stylesheet">
+    <link href="/static/frontend/css/color.css" rel="stylesheet">
+    <link href="/static/frontend/css/style.css" rel="stylesheet">
+    <link href="/static/frontend/css/responsive.css" rel="stylesheet">
+     <script src="https://kit.fontawesome.com/27ff7a5126.js" crossorigin="anonymous"></script>
+
+    <link href="/static/frontend/css/font-awesome-all.css" rel="stylesheet">
+
+    <style>
+        @media screen and (min-width: 400px){
+          .about-section{
+            margin-bottom: -80px;
+
+        }}
+
+        @media screen and (min-width: 400px){
+            .about-section{
+              margin-top: -220px;
+        }}
+
+        @media screen and (min-width: 900px){
+            .about-section{
+              margin-top: 0px;
+            }} 
+            @media screen and (max-width: 700px){
+                .about-section {
+                   margin-top: 1px;
+                }}
+
+    </style>
+
+</head>
+
+
+<!-- page wrapper -->
+
+<body>
+
+    <div class="boxed_wrapper">
+
+
+        <!-- preloader -->
+        <div class="preloader"></div>
+        <!-- preloader -->
+
+<!-- sidebar cart item -->
+        <div class="xs-sidebar-group info-group info-sidebar">
+            <div class="xs-overlay xs-bg-black"></div>
+            <div class="xs-sidebar-widget">
+                <div class="sidebar-widget-container">
+                    <div class="widget-heading">
+                        <a href="#" class="close-side-widget">X</a>
+                    </div>
+                    <div class="sidebar-textwidget">
+                        <div class="sidebar-info-contents">
+                            <div class="content-inner">
+                                <div class="logo">
+                                    <a href="{% url 'index' %}"><img src="/static/frontend/images/logo-2.png" alt="" /></a>
+                                </div>
+                                <div class="content-box">
+                                    <h4>About Us</h4>
+                                    <p>ATK Buildmart is a fashion leader in the retail of sanitary ware, taps, bathtubs,
+                                        toilets, bidets, basins, bathroom accessories, tiles and other related products
+                                        in Kerala.</p>
+                                </div>
+                                <div class="form-inner">
+                                    <h4>Get In Touch</h4>
+                                    <form onsubmit="sendWhatsapp()" method="post">
+                                        {% csrf_token %}
+                                        <div class="form-group">
+                                            <input type="text" name="name" id="txtName" placeholder="Name" required="">
+                                        </div>
+                                        <!-- <div class="form-group">
+                                            <input type="email" name="email" id="txtEmail" placeholder="Email" required="">
+                                        </div> -->
+                                        <div class="form-group">
+                                            <textarea name="message" id="txtMsg" placeholder="Message..."></textarea>
+                                        </div>
+                                        <div class="form-group message-btn">
+                                            <button type="submit" class="theme-btn-one">Submit Now</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END sidebar widget item -->
+        <!-- whatsapp  -->
+        <script>    
+            function sendWhatsapp(){
+                var name = document.getElementById('txtName').value;
+                // var email = document.getElementById('txtEmail').value;
+                var msg = document.getElementById('txtMsg').value;
+                var message = encodeURIComponent(name) + "%0a" +  encodeURIComponent(msg);
+                var whatsapp_url = "whatsapp://send/?phone=+919446465966&text=*Hello*,%0a" + message;
+                window.location.href = whatsapp_url;
+            }
+        </script>
+        <!-- whatsapp  -->
+
+
+        <!-- main header -->
+        <header class="main-header style-two">
+            <div class="header-top centred">
+                <div class="top-inner">
+                    <p>Welcome to ATK BUILDMART. We offer the best quality tiles and sanitarywares at your affordable price <a
+                            href="tel:9446465966"><i class="fas fa-phone-alt"></i> +91 94464 65966</a></p>
+                </div>
+            </div>
+            <!-- header-lower -->
+            <div class="header-lower">
+                <div class="outer-box">
+                    <div class="logo-box">
+                        <figure class="logo"><a href="{% url 'index' %}"><img src="/static/frontend/images/logo-3.png" alt=""></a>
+                        </figure>
+                    </div>
+                    <div class="menu-area">
+                        <!--Mobile Navigation Toggler-->
+                        <div class="mobile-nav-toggler">
+                            <i class="icon-bar"></i>
+                            <i class="icon-bar"></i>
+                            <i class="icon-bar"></i>
+                        </div>
+                        <nav class="main-menu navbar-expand-md navbar-light">
+                            <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                                <ul class="navigation clearfix">
+                                    <li><a href="{% url 'index' %}">Home</a></li>
+                                    <li class="dropdown"><a href="{% url 'product' %}">Products</a>
+                                        <div class="megamenu">
+                                            <div class="row clearfix">
+                                                <div class="col-lg-6 column">
+                                                     <ul>
+                                                        <li><a href="{% url 'tile' %}">Tiles</a></li>
+                                                        <li><a href="{% url 'sanitaryware' %}">Sanitary Ware</a></li>
+                                                        <li><a href="{% url 'bathroomfitting' %}">Bath Fittings</a></li>
+                                                        <li><a href="{% url 'showerpanel' %}">Shower Panels</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-6 column">
+                                                    <ul>
+                                                        <li><a href="{% url 'jacuzzi' %}">jacuzzi</a></li>
+                                                        <li><a href="{% url 'spaartbasin' %}">Spa Art Basin</a></li>
+                                                        <li><a href="{% url 'cabinetledmirrors' %}">Cabinet & Led Mirrors</a></li>
+                                                    </ul>
+                                                </div>                                     
+                                            </div>                                        
+                                        </div>
+                                    </li>
+                                    <li class="current"><a href="{% url 'about' %}">About Us</a></li>
+                                    <li><a href="{% url 'gallery' %}">Gallery</a></li>
+                                    <li><a href="{% url 'catalogue' %}">Showroom</a></li>
+                                    <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="nav-right-content">
+                        <div class="btn-box nav-toggler clearfix"><a href="https://wa.me/+919446465966" target="_blank">9446465966<i class="fa fa-whatsapp"></i></a></div>
+                    </div>
+                
+                    <div class="nav-right-content">
+                        <div class="btn-box nav-toggler clearfix"><a href="https://wa.me/+918606999506" target="_blank">8606999506<i class="fa fa-whatsapp"></i></a></div>
+                    </div>
+                </div>
+            </div>
+
+            <!--sticky Header-->
+            <div class="sticky-header">
+                <div class="outer-box">
+                    <div class="logo-box">
+                        <figure class="logo"><a href="{% url 'index' %}"><img src="/static/frontend/images/logo.png" alt=""></a></figure>
+                    </div>
+                    <div class="menu-area">
+                        <nav class="main-menu clearfix">
+                            <!--Keep This Empty / Menu will come through Javascript-->
+                        </nav>
+                    </div>
+                
+                </div>
+            </div>
+        </header>
+        <!-- main-header end -->
+
+
+        <!-- Mobile Menu  -->
+        <div class="mobile-menu">
+            <div class="menu-backdrop"></div>
+            <div class="close-btn"><i class="fas fa-times"></i></div>
+
+            <nav class="menu-box">
+                <div class="nav-logo"><a href="{% url 'index' %}"><img src="/static/frontend/images/logo-2.png" alt="" title=""></a>
+                </div>
+                <div class="menu-outer">
+                    <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                </div>
+                <div class="contact-info">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><a href="https://goo.gl/maps/qeX57YVpjaVVSVN39">ATK BUILDMART<br>
+                            NEAR KODANGAD JUMA MASJID,
+                            KODANGAD,KONDOTTY
+                            MALAPPURAM - PIN-673638</a></li>
+                        <li><a href="tel:9446465966">94464 65966</a></li>
+                        <li><a href="mailto:atkbuildmart@gmail.com">atkbuildmart@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <ul class="clearfix">
+                        <li><a><span class="fab fa-twitter"></span></a></li>
+                        <li><a href="https://www.facebook.com/ATK-Buildmart-103319114729292/"><span class="fab fa-facebook-square"></span></a></li>
+                        <!-- <li><a href="{% url 'index' %}"><span class="fab fa-pinterest-p"></span></a></li> -->
+                        <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                        <li><a><span class="fab fa-youtube"></span></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div><!-- End Mobile Menu -->
+
+
+        <!-- Page Title -->
+        <section class="page-title centred" style="background-image: url(/static/frontend/images/background/tile-2.jpg);">
+            <div class="auto-container">
+                <div class="content-box">
+                    <div class="title">
+                        <h1>About Us</h1>
+                    </div>
+                    <ul class="bread-crumb clearfix">
+                        <li><a href="{% url 'index' %}">Home</a></li>
+                        <li>About Us</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- End Page Title -->
+
+
+        <!-- about-style-two -->
+        <section class="about-style-two"  style="margin-bottom: 0px;">
+            <div class="auto-container">
+                <div class="row align-items-center clearfix">
+                    <div class="col-lg-7 col-md-12 col-sm-12 image-column">
+                        <div class="image_block_2">
+                            <div class="image-box">
+                                <div class="image-content">
+                                    <span>17</span>
+                                    <h2>17</h2>
+                                    <h4>Years Of Experience</h4>
+                                </div>
+                                <figure class="image"><img src="/static/frontend/images/resource/about-5.jpg" alt=""></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 col-sm-12 content-column">
+                        <div class="content_block_3">
+                            <div class="content-box">
+                                <div class="sec-title">
+                                    
+                                    <h2>Company Information</h2>
+                                </div>
+                                <div class="text">
+                                    <p>ATK is a solid company with a consistent, easily identifiable image since its
+                                        inception in the year 2004. Drawing on our world-class quality, we deliver
+                                        pioneering innovations through our well-loved, home-grown brands. We are known
+                                        in the industry for exclusive items and cater to both the upper and middle
+                                        market sector.
+                                        <br><br>
+                                        Today ATK Buildmart is a fashion leader in the retail of sanitary ware, taps,
+                                        bathtubs, toilets, bidets, basins, bathroom accessories, tiles and other related
+                                        products in Kerala. Our newest range of products added is built in cabinets and
+                                        vanities which includes brands that are imported as well as home-grown.
+                                        <br><br>
+                                        Our portfolio includes iconic brands, like Cera, Parryware, Kohler, Johnson,
+                                        RAK, Roca International which have established their brand value over the years
+                                        with their technology and have grown to become experts in water technology. The
+                                        range of product offering at Build Mart is diverse and includes a broad spectrum
+                                        of technical products specifically designed for the professional. We also boast
+                                        a full range of elegant basins, baths and taps that will suit any home and are
+                                        sure to leave a lasting impression.
+                                        <br><br>
+                                        Atk Buildmart has commenced its soft lounge on 20th September 2019. ATK Buildmart is currently, The tiles and sanitary wares outlet with the most
+                                        designs available in Kerala, India including 10,000+ variety of unique designs from almost 47 top quality brands in our 24,000 sq.ft wide outlet
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about-style-two end -->
+
+
+        <section class="about-section pad-abt-sec">
+            <div class="auto-container" >
+                <div class="row clearfix">
+
+                    <div class="col-lg-6 col-md-12 col-sm-12 order-md-2 content-column ">
+                        <div class="content_block_1">
+                            <div class="content-box">
+                                
+                                <figure class="image image-1 paroller1" style="margin-bottom: 0px;">
+                                    <img src="/static/frontend/images/png.png"alt="">
+                                </figure>
+                                
+                             </div>
+                        </div>
+                  </div>
+                    
+                    <div class="col-lg-6 col-md-12 col-sm-12 image-column">
+                        <div class="image_block_1" >
+                            <div class="image-box pad-img-fig" >
+                                <h1 style="text-align:center; padding-top:50px;" class="pad-img">AFSAL T.K</h1>
+                                <h5 style="text-align:center;">(HONOURABLE MANAGING DIRECTOR)</h5>
+                                <p style="text-align:center; margin-bottom:0px; margin-top:0px" >
+                                    Afsal T.K is the founder of Kerala's No.1 tile distributor, ATK Enterprises, started in 2004 and have been imprinting their success throughout the years. He also remains to be the Managing Director at ATK Buildmart, being the backbone in running the enterprise with such huge success. 
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                   
+            </div>
+        </section>
+
+        <!-- cta-section -->
+        <section class="cta-section cta-section-about"
+            style="background-image: url(/static/frontend/images/background/DSC08342.jpg);margin-top: 0px;">
+            <div class="auto-container">
+                <div class="inner-box" >
+                    <h4>History</h4>
+                    <p class="history-p">ATK BUILDMART TOOK BIRTH FROM THE 17 YEAR TRUSTWORTHY 
+                                        RUNNING BUSINESS OF KERALAS HIGHEST SALE TAX PAYERS IN 2010
+                                        AUTHORISED BY KERALA GOVERNMENT AND KERALAS NO:1 TILE 
+                                        DISTRIBUTERS ATK ENTERPRISES WHICH WAS STARTED IN 2004 BY 
+                                        Mr.AFSAL T.K (HONOURABLE MANAGING DIRECTOR). THE COMPANY 
+                                        TITLE IS ASSEMBLED FROM THE NAME OF OUR FOUNDER AFSAL T.K. ATK 
+                                        GROUP CONSISTS OF 3 OTHER PARTNERS NAMED MAHAMOOD MULIYIL, 
+                                        ABDUL KADER AND ABDUL NASSER.
+                                        <br>
+                                        ATK ENTERPRISES IS THE LARGEST WHOLESALE TILE DEALERS IN KERALA
+                                        CONQUERING HEARTS OF PEOPLE WITH QUALITY INDIAN TILES WITH 
+                                        TRUST SINCE 2004. WE ARE HEREBY VERY PROUD TO DECLARE THAT THE 
+                                        FACE AND BRAND VALUE OF ATK ENTERPRISE HAS ALWAYS BEEN 
+                                        QUALITY AND TRUST WHICH HAS MADE MORE DEALERS REACH 
+                                        TOWARDS US. 
+                                        <br>
+                                         AFTER 15 YEARS OF SUCCESSFUL CATERING TO THE 400+ DEALERS ALL 
+                                        OVER KERALA, WE REALISED THE NEEDS OF OUR RESPECTED CUSTOMERS 
+                                        AND INORDER TO REACH DIRECTLY TO THE PEOPLE, ATK ENTERPRISES 
+                                        COMMENCED OUR FIRST BRAND NEW MEGA OUTLET IN THE HEART OF 
+                                        MALAPPURAM, KONDOTTY TO FULFILL THE HOMELY NEEDS OF THE 
+                                        PEOPLE OF KERALA WITH THE SAME QUALITY AND TRUST.
+                        <br>
+
+                    </p>
+                    <div class="btn-box">
+                        <a href="{% url 'contact' %}" class="theme-btn-one">Get A Quote</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- cta-section end -->
+
+       
+        <!-- experience-section -->
+        <section class="experience-section alternat-2 bg-color-3">
+            <div class="auto-container">
+                <div class="row clearfix">
+                    <div class="col-lg-6 col-md-12 col-sm-12 single-column">
+                        <div class="single-item">
+                            <div class="inner-box mb-100">
+                                <div class="progress-box">
+                                    <div class="piechart" data-fg-color="#80161a" data-value=".89">
+                                        <span>.89</span>
+                                    </div>
+                                </div>
+                                <div class="content-box">
+                                    <h2>Satisfied Clients</h2>
+                                    <p>Relying on our own knowledge and experience, we passionately strive to enrich
+                                        customer's quality of life, thereby enhancing stakeholder value every moment.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 single-column">
+                        <div class="single-item">
+                            <div class="inner-box mb-100">
+                                <div class="progress-box">
+                                    <div class="piechart" data-fg-color="#80161a" data-value=".93">
+                                        <span>.93</span>
+                                    </div>
+                                </div>
+                                <div class="content-box">
+                                    <h2>Quality Services</h2>
+                                    <p>We know how much you enjoy showering, bathing and washing up when you have
+                                        emotive design that is visually flattering, hence providing
+                                        premium quality at the best prices have always been our primary motive.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 single-column">
+                        <div class="single-item">
+                            <div class="inner-box">
+                                <div class="progress-box">
+                                    <div class="piechart" data-fg-color="#80161a" data-value=".78">
+                                        <span>.78</span>
+                                    </div>
+                                </div>
+                                <div class="content-box">
+                                    <h2>Top-Class Design</h2>
+                                    <p>We offers a collection of bathroom and kitchen products which is
+                                        elegant and diversified both in aesthetics and in functional features. We
+                                        realise our vision of building a reputation of a reliable and innovative partner
+                                        with tradition.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 single-column">
+                        <div class="single-item">
+                            <div class="inner-box">
+                                <div class="progress-box">
+                                    <div class="piechart" data-fg-color="#80161a" data-value=".85">
+                                        <span>.85</span>
+                                    </div>
+                                </div>
+                                <div class="content-box">
+                                    <h2>Logistics</h2>
+                                    <p>ATK Build Mart offers a comprehensive “warehouse to customer” logistics service,
+                                        which means we’ll deliver products to your business, wherever it is.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- experience-section end -->
+
+        <!-- testimonial-style-two -->
+        <section class="testimonial-style-two bg-color-1">
+            <div class="bg-layer" style="background-image: url(/static/frontend/images/background/testimonial-6.jpg);"></div>
+            <div class="outer-container clearfix">
+                <div class="content-column">
+                    <div class="testimonial-content">
+
+                        <div class="single-item-carousel owl-carousel owl-theme owl-dots-none owl-nav-none">
+                            <div class="testimonial-block-two">
+                                <div class="inner-box">
+                                    <h2>Vision</h2>
+                                    <h3>“To become a trusted brand name in the bathroom and sanitary ware industry in
+                                        the world.”</h3>
+                                    <p>ATK Build Mart takes great pride in assisting architectural and interior 
+                                        design teams to create the best bathroom specification for the homes.
+                    
+                                        By using technology in the most effective way, reaching the targeted level of
+                                        customer satisfaction and total quality, the dynamic organizational structure
+                                        has adopted the principle of providing better quality products and services. In
+                                        addition, our company adds value to the sector with its inventions and
+                                        innovative structure in order to achieve a stable and global success in today's
+                                        contemporary management understanding.
+
+                                        The vision of the company is to remain the leading supplier of bathroom
+                                        equipment in the Indian & International market, and to seal its presence and
+                                        visibility in all regional markets through its brands. Focused on continuous
+                                        development, innovations and new products, we want to become a complete provider
+                                        of bathroom and kitchen products for various facilities, while maintaining our
+                                        commitment to corporate social responsibility.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="testimonial-block-two">
+                                <div class="inner-box">
+                                    <h2>Mission</h2>
+                                    <h3>“We strive to provide an abundance of premium products for showers, bathrooms
+                                        and kitchens that is inspired by our passion for water”
+                                    </h3>
+                                    <p>Our Mission is meeting the needs and wishes of our customers for top products for your homes. We work with household names from the design world, offering our rich bath-tubs, shower trays and enclosures, bath-tub with massage systems, massage shower enclosure and bathroom furniture. Keeping the needs of the modern customer in mind, we take the sustainability and environmental impact of our business very seriously. It is our commission hereon to expand our brand all over Kerala and vasten your experience with us as well as our services for you with our retail outlets. Shop with confidence at ATK BuildMart, knowing that the products you select will function correctly and maintain their beauty for years to come. The expert advice and willingness to assist that customers receive from our team, ensures that selecting bathroom ware is always a pleasurable experience.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- testimonial-style-two end -->
+
+
+        <!-- clients-section -->
+       <section class="clients-section bg-color-2">
+            <div class="auto-container">
+                <div class="clients-carousel owl-carousel owl-theme owl-nav-none owl-dots-none">
+                    <figure class="clients-logo-box"><a href="#"><img
+                                src="/static/frontend/images/clients/clients-logo-6.png" alt=""></a></figure>
+                    <figure class="clients-logo-box"><a href="#"><img
+                                src="/static/frontend/images/clients/clients-logo-7.png" alt=""></a></figure>
+                    <figure class="clients-logo-box"><a href="#"><img
+                                src="/static/frontend/images/clients/clients-logo-8.png" alt=""></a></figure>
+                    <figure class="clients-logo-box"><a href="#"><img
+                                src="/static/frontend/images/clients/clients-logo-15.png" alt=""></a></figure>
+                    <figure class="clients-logo-box"><a href="#"><img
+                                src="/static/frontend/images/clients/clients-logo-9.png" alt=""></a></figure>
+                    <figure class="clients-logo-box"><a href="#"><img
+                                src="/static/frontend/images/clients/clients-logo-10.png" alt=""></a></figure>
+                    <figure class="clients-logo-box"><a href="#"><img
+                                src="/static/frontend/images/clients/clients-logo-11.png" alt=""></a></figure>
+                    <figure class="clients-logo-box"><a href="#"><img
+                                src="/static/frontend/images/clients/clients-logo-12.png" alt=""></a></figure>
+                    <figure class="clients-logo-box"><a href="#"><img
+                                src="/static/frontend/images/clients/clients-logo-13.png" alt=""></a></figure>
+                    <figure class="clients-logo-box"><a href="#"><img
+                                src="/static/frontend/images/clients/clients-logo-14.png" alt=""></a></figure>
+                </div>
+            </div>
+        </section>
+        <!-- clients-section end -->
+
+
+       
+        <!-- main-footer -->
+        <footer class="main-footer">
+            <div class="auto-container">
+                <div class="logo-box centred">
+                    <figure class="footer-logo"><a href="{% url 'index' %}"><img src="/static/frontend/images/footer-logo.png"
+                                alt=""></a></figure>
+                </div>
+                <div class="widget-section">
+                    <div class="row clearfix">
+                        <div class="col-lg-6 col-md-12 col-sm-12 footer-column">
+                            <div class="footer-widget about-widget">
+                                <div class="widget-title">
+                                    <h3>About Us</h3>
+                                </div>
+                                <div class="text">
+                                    <p>ATK Buildmart is a fashion leader in the retail of sanitary ware, taps, bathtubs,
+                                        toilets, bidets, basins, bathroom accessories, tiles and other related products
+                                        in Kerala.</p>
+                                </div>
+
+                                <p class="email-footer">Enter Your Email For Our Latest Newsletter</p>
+                                <form action="{% url 'newsLetter' %}" method="post" class="subscribe-form">
+                                    {% csrf_token %}
+                                    {% if messages %}
+                            <div class="form-group color03 ">
+                                <!-- <ul class="messages align-content"> -->
+                                    {% for message in messages %}
+                                        <div {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</div>
+                                    {% endfor %}
+                                <!-- </ul> -->
+                            </div>
+                        {% endif %}
+                                    <div class="form-group">
+                                        <input type="email" name="email" placeholder="Enter Your Email" required="">
+                                        <button type="submit"><i class="far fa-arrow-right"></i></button>
+                                    </div>
+                                </form>
+                                <ul class="social-links clearfix">
+                                    <li><a href="https://www.facebook.com/ATK-Buildmart-103319114729292/"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+                                    <li><a><i class="fab fa-twitter"></i>Twitter</a></li>
+                                    <li><a><i class="fab fa-youtube"></i>Youtube</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 footer-column">
+                            <div class="row clearfix">
+                                <div class="col-lg-6 col-md-6 col-sm-12 column">
+                                    <div class="footer-widget links-widget ml-70">
+                                        <div class="widget-title">
+                                            <h3>Quick Links</h3>
+                                        </div>
+                                        <div class="widget-content">
+                                            <ul class="links-list clearfix">
+                                                <li><a href="{% url 'index' %}">Home</a></li>
+                                                <li><a href="{% url 'product' %}">Product</a></li>
+                                                <li><a href="{% url 'about' %}">About Us</a></li>
+                                                <li><a href="{% url 'gallery' %}">Gallery</a></li>
+                                                <li><a href="{% url 'catalogue' %}">Showroom</a></li>
+                                                <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 column">
+                                    <div class="footer-widget contact-widget ml-40">
+                                        <div class="widget-title">
+                                            <h3>Contact Us</h3>
+                                        </div>
+                                        <div class="text">
+                                            <p>Get In Touch with Our <br>Customer Care</p>
+                                        </div>
+                                        <ul class="info-list clearfix">
+                                            <li><i class="fas fa-phone-alt"></i><a href="tel:9446465966">+91 94464 65966</a></li>
+                                            <li><i class="far fa-envelope-open"></i><a
+                                                    href="mailto:atkbuildmart@gmail.com">atkbuildmart@gmail.com</a></li>
+                                            <li><i class="far fa-map-marker-alt"></i><a href="https://goo.gl/maps/qeX57YVpjaVVSVN39">ATK BUILDMART
+                                                NEAR KODANGAD JUMA MASJID
+                                                KODANGAD
+                                                KONDOTTY
+                                                MALAPPURAM <br>
+                                                PIN-673638</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom centred">
+                    <p>&copy; 2021 ATK Build Mart | All Rights Reserved | Designed By <a
+                            onMouseOver="this.style.color='#71c21b'" onMouseOut="this.style.color='white'"
+                            style="color: white;" href="http://www.admoredigital.com/">Admore Digital</a></p>
+                </div>
+            </div>
+        </footer>
+        <!-- main-footer end -->
+
+
+
+        <!--Scroll to top-->
+        <button class="scroll-top scroll-to-target" data-target="html">
+            <span class="fa fa-arrow-up"></span>
+        </button>
+    </div>
+
+
+    <!-- jequery plugins -->
+    <script src="/static/frontend/js/jquery.js"></script>
+    <script src="/static/frontend/js/popper.min.js"></script>
+    <script src="/static/frontend/js/bootstrap.min.js"></script>
+    <script src="/static/frontend/js/owl.js"></script>
+    <script src="/static/frontend/js/wow.js"></script>
+    <script src="/static/frontend/js/validation.js"></script>
+    <script src="/static/frontend/js/jquery.fancybox.js"></script>
+    <script src="/static/frontend/js/appear.js"></script>
+    <script src="/static/frontend/js/scrollbar.js"></script>
+    <script src="/static/frontend/js/nav-tool.js"></script>
+    <script src="/static/frontend/js/jquery.countTo.js"></script>
+    <script src="/static/frontend/js/circle-progress.js"></script>
+    <script src="/static/frontend/js/jquery.nice-select.min.js"></script>
+
+    <!-- main-js -->
+    <script src="/static/frontend/js/script.js"></script>
+
+</body><!-- End of .page_wrapper -->
+
+<style>
+    
+    .fa-whatsapp:before {
+        color: #25D366 !important;
+    }
+    .fa-whatsapp::before:hover {
+        color: white !important;
+    }
+</style>
+
+
+
+</html>
